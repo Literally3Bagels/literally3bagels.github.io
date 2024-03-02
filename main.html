@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<head>
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <br><br>
+    <div class="cont">
+        <h1>ABOUT ME</h1>
+        <h2>Quick facts</h2>
+        <ul>
+            <li>Name: Aurora</li>
+            <li>Pronouns: she/her</li>
+            <li>Age: 14</li>
+            <li>Birthday: 06/06</li>
+            <li>Home country: Australia</li>
+            <li>Sexuality: Bisexual</li>
+        </ul>
+        <p>Haii!! :3 I'm Aurora (Aur for short), a 14 year old trans girl. I am a programmer, specialising in Python, but have started to learn basic Rust recently. My favourite game is Celeste, followed by Titanfall 2 and Neon Abyss.</p>
+        <br>
+        <h1>SOCIALS</h1>
+        <ul>
+            <li>Discord: @literally3bagels <span id="dc_stat">[LOADING]</span></li>
+            <li>GitHub: <a href="https://github.com/Literally3Bagels">Literally3Bagels</a></li>
+            <li>Pronouns.page: <a href="https://en.pronouns.page/@Literally3Bagels">Literally3Bagels</a></li>
+            <li>Email: darkphoenix32@optusnet.com.au (I MADE IT WHEN I WAS LIKE 8, OKAY? ALSO I DON'T CHECK THIS)</li>
+            <li>Steam: <a href="https://steamcommunity.com/id/literally3bagels/">/id/literally3bagels</a></li>
+        </ul>
+    </div>
+    <br><br>
+    <div class="but">
+        <a href="https://github.com/sainnhe/everforest?tab=readme-ov-file" target="_blank"><img src="everforest8831.png" alt="everforest"></a>
+        <img src="she-her.gif" alt="she/her">
+        <img src="linux-p.gif" alt="powered by linux">
+        <img src="ralseismokingadart.gif" alt="ralsei smoking a fat blunt"> 
+        <a href="https://www.mozilla.org/en-US/firefox/new/" target="_blank"><img src="firefoxnow.gif" alt="firefox"></a>
+        <img src="yahoo.gif" alt="yahoo">
+        <img src="bestvw.gif" alt="best viewing">
+        <img src="transnow2.gif" alt="trans rights">
+        <a href="https://discord.gg/CDwFfNGk6H" target="_blank"><img src="discord2.gif" alt="discord"></a>
+        <a href="https://ublockorigin.com" target="_blank"><img src="ublockorigin.png" alt="ublock"></a>
+        <a href="https://slonk.ing" target="_blank"><img src="slonk.png" alt="slonkazoid"></a>
+        <a href="https://damcraft.de" target="_blank"><img src="dam.gif" alt="damcraft"></a>
+    </div>
+    <script>
+        setInterval(
+            (async () => {
+                const res = await fetch("https://api.lanyard.rest/v1/users/1054919561834672160")
+                const req = await res.json()
+                let dstat = document.getElementById("dc_stat")
+                dstat.innerHTML = `[${req.data.discord_status}]`
+                if (req.data.discord_status == "online") dstat.style.color = "#a7c080"
+                if (req.data.discord_status == "idle") dstat.style.color = "#dbbc7f"
+                if (req.data.discord_status == "dnd") dstat.style.color = "#e67e80"
+                if (req.data.discord_status == "offline") dstat.style.color = "#d3c6aa", 10000
+            }), 1000
+        )
+    </script>
+</body>

@@ -1,0 +1,46 @@
+@import url('https://fonts.cdnfonts.com/css/renogare');
+
+html {
+    background: url("image.png") no-repeat center center fixed;
+    background-size: cover;
+}
+
+body {
+    background: none;
+    font-family: "Renogare", sans-serif;
+    color: #d3c6aa;
+}
+
+a {
+    font-family: "Renogare", monospace;
+    font-style: italic;
+    color: #a7c080;
+}
+
+::selection {
+    color: #2e383c;
+    background: #e67e80;
+}
+
+::-moz-selection {
+    color: #2e383c;
+    background: #e67e80;
+}
+
+.cont {
+    margin: auto;
+    width: 75%;
+    border: 7px solid #d3c6aa;
+    border-radius: 25px;
+    padding: 25px;
+    background-color: #2e383c;
+}
+
+.but {
+    margin: auto;
+    width: 75%;
+    border: 7px solid #d3c6aa;
+    border-radius: 25px;
+    padding: 25px;
+    background-color: #2e383c;
+}
