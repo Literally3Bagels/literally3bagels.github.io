@@ -1,6 +1,7 @@
 @import url('https://fonts.cdnfonts.com/css/renogare');
 
 html {
+    background-color: #2e383c;
     background: url("image.png") no-repeat center center fixed;
     background-size: cover;
 }
