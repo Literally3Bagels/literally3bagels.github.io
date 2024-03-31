@@ -81,7 +81,7 @@ html {
 body {
   background: none;
   font-family: "Renogare", sans-serif;
-  color: var(--fg);
+  color: var(--statusline2);
 }
 
 a {
