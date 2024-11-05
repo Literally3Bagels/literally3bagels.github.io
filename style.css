@@ -37,9 +37,8 @@
     --cur: "/cursor/left_ptr_d.svg";
   }
 }
-
+/*
 @media (prefers-color-scheme: light) {
-  /* everforest hard light */
   :root {
     --bg_dim: #f2efdf;
     --bg0: #fffbef;
@@ -75,7 +74,7 @@
     --cur: "/cursor/left_ptr_l.svg";
   }
 }
-
+*/
 html {
   background-color: var(--bg1);
   background: url("images/image.png") no-repeat center center fixed;
