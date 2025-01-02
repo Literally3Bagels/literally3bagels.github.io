@@ -3,7 +3,7 @@ setInterval(async () => {
         'https://api.lanyard.rest/v1/users/1054919561834672160'
     );
     const req = await res.json();
-    let dstat = document.getElementById('dc_stat');
+    let dstat = document.getElementById('dc-stat');
     // noinspection JSUnresolvedReference
     dstat.innerHTML = `[${req.data.discord_status}]`;
 

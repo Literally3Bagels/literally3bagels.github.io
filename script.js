@@ -1,7 +1,7 @@
 const themeChangeButton = document.getElementById('theme-change-button');
 const mainImage = document.getElementById('main-img');
 
-const themes = [];
+const script = [];
 
 let themeCount;
 let themeIndex = 1;
@@ -9,9 +9,9 @@ let themeIndex = 1;
 fetch('themes.json').then(r => r.json())
     .then(data => {
         for (const theme of data) {
-            themes.push(theme);
+            script.push(theme);
         }
-        themeCount = themes.length;
+        themeCount = script.length;
     });
 
 function setStyleProperty(name, value) {
@@ -27,7 +27,7 @@ function applyTheme(theme) {
 }
 
 themeChangeButton.addEventListener('click', () => {
-    applyTheme(themes[themeIndex]);
+    applyTheme(script[themeIndex]);
     themeIndex++;
     if (themeIndex === themeCount) {
         themeIndex = 0;
