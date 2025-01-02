@@ -1,0 +1,16 @@
+[
+  {
+    "black": "#000",
+    "accent": "#FC77CE",
+    "link": "#B289F4",
+    "bg": "url(images/girlypop/bg-64x64.png)",
+    "mainImg": "images/girlypop/heart.png"
+  },
+  {
+    "black": "#000",
+    "accent": "#48D6F9",
+    "link": "#3819DA",
+    "bg": "url(images/ocean/ocean-texture.jpg)",
+    "mainImg": "images/ocean/dolphin.jpg"
+  }
+]

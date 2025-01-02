@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<head>
+  <title>Literally 3 Bagels</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="row">
+  <div class="col-cont">
+
+    <div id="photo" class="info">
+      <h3>literally3bagels</h3>
+      <img src="images/girlypop/heart.png" id="main-img" alt="Main image">
+    </div>
+    <br><br>
+    <div id="links" class="info">
+      <h1>SOCIALS</h1>
+      <p>Discord - @literally3bagels <span id="dc_stat">[loading]</span></p>
+      <p>Github - <a href="https://github.com/Literally3Bagels" target="_blank">Literally3Bagels</a></p>
+      <p>Steam - <a href="https://steamcommunity.com/id/literally3bagels/" target="_blank">/id/literally3bagels</a></p>
+      <p>Lastfm - <a href="https://www.last.fm/user/Three_Bagels" target="_blank">@Three_Bagels</a></p>
+      <p>Bluesky - <a href="https://bsky.app/profile/literally3bagels.bsky.social" target="_blank">@literally3bagels.bsky.social</a>
+      </p>
+    </div>
+
+  </div>
+  <div class="col-fill"></div>
+  <div class="col-cont">
+
+    <div id="about-me" class="info">
+      <h1>ABOUT ME</h1>
+      <p>Hii! I'm Aurora! I am a 15 year old transfem, who uses she/her pronouns. I enjoy music, video games, and
+        coding! My birthday is on June 6th, and I live in Melbourne, Australia. I'm a furry, and my main fursona is a
+        protogen fox named Kari. I probably say :3 too much (eh, who am I kidding, that's impossible).</p>
+    </div>
+    <br><br>
+    <div id="hyperfixations" class="info">
+      <h1>HYPERFIXATIONS</h1>
+      <p>My current hyperfixations (in no order) are:</p>
+      <ul>
+        <li>Balatro (video game)</li>
+        <li>Toxicity, by System Of a Down (album)</li>
+        <li>Limbus Company (video game)</li>
+      </ul>
+    </div>
+    <br><br>
+    <div id="spotify" class="info">
+      <iframe style="border-radius:25px"
+              src="https://open.spotify.com/embed/playlist/1ga4B92qMdSJlz8UMIn9xW?utm_source=generator&theme=0"
+              width="100%" height="300" allowfullscreen=""
+              allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+              loading="lazy"></iframe>
+    </div>
+  </div>
+</div>
+<br><br>
+<div id="8831" class="info">
+  <img src="images/88x31s/2001.gif" alt="2001">
+  <img src="images/88x31s/acab.gif" alt="acab">
+  <img src="images/88x31s/ancom.png" alt="ancom">
+  <img src="images/88x31s/arch.png" alt="arch">
+  <img src="images/88x31s/coffee powered.gif" alt="coffee powered">
+  <img src="images/88x31s/crushcapitalism.png" alt="crushcapitalism">
+  <img src="images/88x31s/dont click.gif" alt="dont click">
+  <img src="images/88x31s/download.gif" alt="download">
+  <img src="images/88x31s/fascist killer.jpg" alt="fascist killer">
+  <img src="images/88x31s/firefoxnow.gif" alt="firefoxnow">
+  <img src="images/88x31s/girls.png" alt="girls">
+  <img src="images/88x31s/hate microsoft.gif" alt="hate microsoft">
+  <img src="images/88x31s/hello_kitty.gif" alt="hello_kitty">
+  <img src="images/88x31s/legalise weed.gif" alt="legalise weed">
+  <img src="images/88x31s/miku approved.gif" alt="miku approved">
+  <img src="images/88x31s/my own two paws.png" alt="my own two paws">
+  <img src="images/88x31s/peace.png" alt="peace">
+  <img src="images/88x31s/piracy.png" alt="piracy">
+  <img src="images/88x31s/powered by estrogen.gif" alt="powered by estrogen">
+  <img src="images/88x31s/queercoded.png" alt="queercoded">
+  <img src="images/88x31s/transnow2.gif" alt="transnow2">
+  <img src="images/88x31s/ublockorigin.png" alt="ublockorigin">
+</div>
+<br><br>
+<button id="theme-change-button">Change theme :3</button>
+<script>
+    setInterval(async () => {
+        const res = await fetch(
+            'https://api.lanyard.rest/v1/users/1054919561834672160'
+        );
+        const req = await res.json();
+        let dstat = document.getElementById('dc_stat');
+        // noinspection JSUnresolvedReference
+        dstat.innerHTML = `[${req.data.discord_status}]`;
+
+        function getPropertyValue(property) {
+            return getComputedStyle(document.documentElement).getPropertyValue(`--${property}`);
+        }
+
+        const statusColors = {
+            online: getPropertyValue('green'),
+            idle: getPropertyValue('yellow'),
+            dnd: getPropertyValue('red'),
+            offline: getPropertyValue('grey')
+        };
+
+        // noinspection JSUnresolvedReference
+        dstat.style.color = statusColors[req.data.discord_status];
+    }, 1000);
+</script>
+<script src="script.js"></script>
+</body>

@@ -1,0 +1,52 @@
+:root {
+    --white: #FFF;
+    --black: #000;
+    --accent: #FC77CE;
+    --red: #F00;
+    --yellow: #FF0;
+    --green: #0F0;
+    --grey: #999;
+    --link: #B289F4;
+
+    --bg: url(images/girlypop/bg-64x64.png);
+}
+
+body {
+    background-color: var(--black);
+    background-image: var(--bg);
+    background-repeat: repeat;
+    color: var(--white);
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    margin: 7%;
+}
+
+h1 {
+    color: var(--accent);
+}
+
+a {
+    color: var(--link);
+}
+
+.info {
+    background-color: var(--black);
+    outline: 4px solid var(--white);
+    border: 4px solid var(--accent);
+    padding: 20px;
+}
+
+.row {
+    display: flex;
+}
+
+.col-cont {
+    flex: 50%;
+}
+
+.col-fill {
+    flex: 5%;
+}
+
+#main-img {
+    width: 400px;
+}
