@@ -6,7 +6,6 @@
 <body>
 <div class="row">
   <div class="col-cont">
-
     <div id="photo" class="info">
       <h3>literally3bagels</h3>
       <img src="images/girlypop/heart.png" id="main-img" alt="Main image">
@@ -14,18 +13,16 @@
     <br><br>
     <div id="links" class="info">
       <h1>SOCIALS</h1>
-      <p>Discord - @literally3bagels <span id="dc_stat">[loading]</span></p>
+      <p>Discord - @literally3bagels <span id="dc-stat">[loading]</span></p>
       <p>Github - <a href="https://github.com/Literally3Bagels" target="_blank">Literally3Bagels</a></p>
       <p>Steam - <a href="https://steamcommunity.com/id/literally3bagels/" target="_blank">/id/literally3bagels</a></p>
       <p>Lastfm - <a href="https://www.last.fm/user/Three_Bagels" target="_blank">@Three_Bagels</a></p>
       <p>Bluesky - <a href="https://bsky.app/profile/literally3bagels.bsky.social" target="_blank">@literally3bagels.bsky.social</a>
       </p>
     </div>
-
   </div>
   <div class="col-fill"></div>
   <div class="col-cont">
-
     <div id="about-me" class="info">
       <h1>ABOUT ME</h1>
       <p>Hii! I'm Aurora! I am a 15 year old transfem, who uses she/her pronouns. I enjoy music, video games, and
@@ -55,54 +52,49 @@
 <br><br>
 <div id="8831" class="info">
   <img src="images/88x31s/2001.gif" alt="2001">
-  <img src="images/88x31s/acab.gif" alt="acab">
-  <img src="images/88x31s/ancom.png" alt="ancom">
-  <img src="images/88x31s/arch.png" alt="arch">
+  <a href="https://www.abc.net.au/news/2024-08-16/when-cops-are-criminals-edited-by-veronica-gorrie-interview/104230948"
+     target="_blank">
+    <img src="images/88x31s/acab.gif" alt="acab">
+  </a>
+  <a href="https://archive.org/details/the-anarchist-cookbook-william-powell" target="_blank">
+    <img src="images/88x31s/ancom.png" alt="ancom">
+  </a>
+  <a href="https://archlinux.org/" target="_blank">
+    <img src="images/88x31s/arch.png" alt="arch">
+  </a>
   <img src="images/88x31s/coffee powered.gif" alt="coffee powered">
   <img src="images/88x31s/crushcapitalism.png" alt="crushcapitalism">
-  <img src="images/88x31s/dont click.gif" alt="dont click">
-  <img src="images/88x31s/download.gif" alt="download">
+  <a href="secret.html" target="_blank">
+    <img src="images/88x31s/dont click.gif" alt="dont click">
+  </a>
+  <a href="https://www.youtube.com/watch?v=DzsNFEWklnM" target="_blank">
+    <img src="images/88x31s/download.gif" alt="download">
+  </a>
   <img src="images/88x31s/fascist killer.jpg" alt="fascist killer">
-  <img src="images/88x31s/firefoxnow.gif" alt="firefoxnow">
+  <a href="https://www.mozilla.org/en-US/firefox/windows/" target="_blank">
+    <img src="images/88x31s/firefoxnow.gif" alt="firefoxnow">
+  </a>
   <img src="images/88x31s/girls.png" alt="girls">
   <img src="images/88x31s/hate microsoft.gif" alt="hate microsoft">
   <img src="images/88x31s/hello_kitty.gif" alt="hello_kitty">
-  <img src="images/88x31s/legalise weed.gif" alt="legalise weed">
+  <a href="https://publichealth.jhu.edu/2023/risks-and-benefits-of-legalized-cannabis" target="_blank">
+    <img src="images/88x31s/legalise weed.gif" alt="legalise weed">
+  </a>
   <img src="images/88x31s/miku approved.gif" alt="miku approved">
   <img src="images/88x31s/my own two paws.png" alt="my own two paws">
   <img src="images/88x31s/peace.png" alt="peace">
-  <img src="images/88x31s/piracy.png" alt="piracy">
+  <a href="https://thepiratebay.org/" target="_blank">
+    <img src="images/88x31s/piracy.png" alt="piracy">
+  </a>
   <img src="images/88x31s/powered by estrogen.gif" alt="powered by estrogen">
   <img src="images/88x31s/queercoded.png" alt="queercoded">
   <img src="images/88x31s/transnow2.gif" alt="transnow2">
-  <img src="images/88x31s/ublockorigin.png" alt="ublockorigin">
+  <a href="https://ublockorigin.com/" target="_blank">
+    <img src="images/88x31s/ublockorigin.png" alt="ublockorigin">
+  </a>
 </div>
 <br><br>
 <button id="theme-change-button">Change theme :3</button>
-<script>
-    setInterval(async () => {
-        const res = await fetch(
-            'https://api.lanyard.rest/v1/users/1054919561834672160'
-        );
-        const req = await res.json();
-        let dstat = document.getElementById('dc_stat');
-        // noinspection JSUnresolvedReference
-        dstat.innerHTML = `[${req.data.discord_status}]`;
-
-        function getPropertyValue(property) {
-            return getComputedStyle(document.documentElement).getPropertyValue(`--${property}`);
-        }
-
-        const statusColors = {
-            online: getPropertyValue('green'),
-            idle: getPropertyValue('yellow'),
-            dnd: getPropertyValue('red'),
-            offline: getPropertyValue('grey')
-        };
-
-        // noinspection JSUnresolvedReference
-        dstat.style.color = statusColors[req.data.discord_status];
-    }, 1000);
-</script>
+<script src="status.js"></script>
 <script src="script.js"></script>
 </body>
