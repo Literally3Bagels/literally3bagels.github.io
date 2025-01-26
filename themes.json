@@ -12,5 +12,12 @@
     "link": "#3819DA",
     "bg": "url(images/ocean/ocean-texture.jpg)",
     "mainImg": "images/ocean/dolphin.jpg"
+  },
+  {
+    "black": "#000",
+    "accent": "#ED1C24",
+    "link": "#38E61E",
+    "bg": "url(images/rainbow/wallpaper-64x64.png)",
+    "mainImg": "images/rainbow/graphic-design.png"
   }
 ]
