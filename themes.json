@@ -19,5 +19,12 @@
     "link": "#38E61E",
     "bg": "url(images/rainbow/wallpaper-64x64.png)",
     "mainImg": "images/rainbow/graphic-design.png"
+  },
+  {
+    "black": "#000",
+    "accent": "#7F0000",
+    "link": "#7F0000",
+    "bg": "url(images/emo/emo_wallpaper.jpg)",
+    "mainImg": "images/emo/red_skull.jpg"
   }
 ]
