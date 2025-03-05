@@ -16,7 +16,7 @@ body {
     background-image: var(--bg);
     background-repeat: repeat;
     color: var(--white);
-    font-family: 'Comic Sans MS', 'Chalkboard SE', 'Comic Neue', sans-serif;
+    font-family: 'Comic Sans MS', 'Comic Sans', 'Chalkboard SE', 'Comic Neue', sans-serif;
     margin: 7%;
 }
 
